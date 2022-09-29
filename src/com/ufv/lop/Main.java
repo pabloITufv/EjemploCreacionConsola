@@ -20,6 +20,6 @@ public class Main {
         System.out.println("Su apellido es: " + p.getApellido());
         System.out.println("Su DNI es: " + p.getDniSinLetra());
         System.out.println("Su edad: " + p.getEdad());
-        
+
     }
 }
