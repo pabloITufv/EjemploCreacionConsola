@@ -6,7 +6,12 @@ public class Main {
     public static void main(String[] args) {
 
         Persona p = new Persona(); //Creas el constructor vacío, es una nueva variable (p) dentro de la clase Persona
+        Perritos perro = new Perritos(); //declaramos un objeto de tpo perritos llamado perro
         Scanner nombreVariable = new Scanner(System.in);
+
+        System.out.println("Escribe el nombre de la raza: ");
+        perro.setRaza(nombreVariable.nextLine());
+
         System.out.println("Escribe tu nombre: ");
         p.setNombre(nombreVariable.nextLine());
         System.out.println("Escribe tu apellido: ");
@@ -20,6 +25,8 @@ public class Main {
         System.out.println("Su apellido es: " + p.getApellido());
         System.out.println("Su DNI es: " + p.getDniSinLetra());
         System.out.println("Su edad: " + p.getEdad());
+        System.out.println("Su perro tiene una raza: " + perro.getRaza());
+
 
     }
 }
